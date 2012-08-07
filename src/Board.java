@@ -4,6 +4,18 @@ import java.awt.Image;
 
 public class Board extends JPanel{
 
+    public Board() {
+
+        add(new StartMenu());
+
+        setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        setSize(480, 320);
+        setLocationRelativeTo(null);
+        setTitle("Tactics");
+        setVisible(true);
+        setResizable(false);
+    }
+
     Image background;
 
     public Board() {
