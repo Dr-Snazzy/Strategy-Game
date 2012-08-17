@@ -12,6 +12,7 @@ public class MainClass{
         MainClass.frame.setVisible(true);
         MainClass.frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         MainClass.frame.setSize(480, 320);
+        MainClass.frame.setResizable(false);
     }
 
     public static void main(String[] args){
@@ -21,17 +22,5 @@ public class MainClass{
         frame.setVisible(true);
         frame.setResizable(false);
         frame.setBackground(Color.WHITE);
-
-       // Get the size of the screen
-       Dimension dim = Toolkit.getDefaultToolkit().getScreenSize();
-
-// Determine the new location of the window
-        int w = frame.getSize().width;
-        int h = frame.getSize().height;
-        int x = (dim.width-w)/2;
-        int y = (dim.height-h)/2;
-
-// Move the window
-        frame.setLocation(x, y);
     }
 }
