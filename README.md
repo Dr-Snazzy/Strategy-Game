@@ -1,4 +1,4 @@
 Strategy-Game
 =============
-Test
+Test banannas!
 Will's Project
